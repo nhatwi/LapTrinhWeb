@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .khung-anh {
+            width: 250px;
+            height: 150px;
+            background-color: lightgray;
+            margin: 100px; /* Đẩy khung ra giữa màn hình cho dễ nhìn */
+            /* BƯỚC 1: Giữ dòng này -> Chấm đỏ nằm gọn ở góc trên-phải của khung xám */
+            /* BƯỚC 2: Xóa dòng này -> Chấm đỏ bay vút lên góc trên-phải của MÀN HÌNH */
+            position: relative;
+        }
+
+        .cham-do {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+            /* Nhấc chấm đỏ lên bay tự do */
+            position: absolute;
+            top: 10px; /* Cách mép trên 10px */
+            right: 10px; /* Cách mép phải 10px */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="khung-anh">
+        Khung ảnh của tui
+        <div class="cham-do"></div>
+    </div>
+
+</body>
+</html>

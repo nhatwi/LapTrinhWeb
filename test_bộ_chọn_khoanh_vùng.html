@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>training css</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body {
+            background-color: gray;
+        }
+
+        .container {
+            width: 900px;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        .top {
+            height: 100px;
+            background-color: red;
+        }
+        /* Menu trang cao 22px, canh giữa */
+        .menu {
+            height: 22px;
+            line-height: 22px;
+            background-color: yellow;
+            text-align: center;
+        }
+        /* Giữa trang cao tối thiểu 400px */
+        .middle {
+            min-height: 400px;
+            overflow: hidden;
+        }
+        /* Giữa trái cao như middle, rộng 250px ghim trái */
+        .middle_left {
+            float: left;
+            width: 250px;
+            min-height: 400px;
+            background-color: aqua;
+        }
+        /* Giữa phải cao như middle, rộng 650px ghim phải */
+        .middle_right {
+            float: right;
+            width: 650px;
+            min-height: 400px;
+            background-color: white;
+        }
+        /* Chân trang không ghim, cao 22px */
+        .bottom {
+            clear: both;
+            height: 22px;
+            background-color: yellow;
+        }
+        /* fieldset trong middle_left cao tối thiểu 150px */
+        .middle_left fieldset {
+            min-height: 150px;
+        }
+        /* list item trong middle_left không có dấu, kẻ chân */
+        .middle_left li {
+            list-style-type: none;
+            border-bottom: 1px dotted red;
+        }
+        /* liên kết trong .menu cách nhau 20px */
+        .menu a {
+            padding: 0px 10px;
+        }
+        /* liên kết trong .middle_left chữ HOA nhỏ */
+        .middle_left a {
+            font-variant: small-caps;
+        }
+            /* liên kết có chuột trong .middle_left in đậm */
+            .middle_left a:hover {
+                font-weight: bold;
+            }
+        /* liên kết chung cho toàn trang (đúng thứ tự LVHA) */
+        a {
+            text-decoration: none;
+        }
+
+            a:link, a:visited {
+                color: blue;
+            }
+
+            a:hover {
+                color: red;
+            }
+
+            a:active {
+                color: blue;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top"></div>
+
+        <div class="menu">
+            <a href="#1">Home</a>
+            <a href="#2">About</a>
+            <a href="#3">Contact</a>
+        </div>
+
+        <div class="middle">
+            <div class="middle_left">
+                <fieldset>
+                    <legend>Menu</legend>
+                    <ul>
+                        <li><a href="#1">Home</a></li>
+                        <li><a href="#2">About</a></li>
+                        <li><a href="#3">Contact</a></li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="middle_right"></div>
+        </div>
+
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>
