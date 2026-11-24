@@ -1,0 +1,88 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 900px;
+    margin: 20px auto;
+    border: 1px solid #666;
+}
+/*Banner*/
+.banner {
+    height: 130px;
+    background-color: #2b2b2b;
+}
+/*Menu*/
+.menu {
+    text-align: center;
+    padding: 8px 0;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    background-color: gray;
+}
+    .menu a {
+        padding: 0 14px;
+        background-color: white;
+        margin: 0 5px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-variant: small-caps;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    a:hover{
+        color:red;
+    }
+/*chia thân trang thành 2 cột bằng display:flex*/
+.middle {
+    display: flex;
+    min-height: 420px;
+}
+.middle-left {
+    width: 240px;
+    padding: 10px;
+    border-right: 1px solid #666;
+}
+    .middle-left fieldset {
+        border: 1px dashed #666;
+        padding: 8px 10px;
+        margin-bottom: 12px;
+        min-height: 65px;
+    }
+    .middle-left legend {
+        font-size: 13px;
+        font-weight: bold;
+        padding: 0 5px;
+        border: 1px dashed gray;
+    }
+    .middle-left ul {
+        padding-left: 16px;
+    }
+    .middle-left li {
+        list-style-type: square;
+        border-bottom: 1px dashed black;
+        padding: 4px 0;
+    }
+.middle-right {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+.bottom {
+    padding: 6px 0;
+    text-align: center;
+    background-color: grey;
+    border-top: 1px solid black;
+    font-size: 12px;
+    font-weight: bold;
+}
+.span-whitebg {
+    background-color: white;
+    padding: 2px 8px;
+}
