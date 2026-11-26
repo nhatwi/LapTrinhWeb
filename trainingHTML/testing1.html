@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <!-- 1. Ô nhập tên (thẻ đơn, không có thẻ đóng) -->
+  <input type="text" id="hoTen" placeholder="Nhập tên của cậu">
+  <button onclick="chaoHoi()">Gửi lời chào</button>
+
+  <!-- 2. Cặp thẻ <p> rỗng nằm chờ sẵn ở đây nè cậu! -->
+  <p id="loiChao"></p>
+
+  <!-- 3. Đoạn JavaScript điều khiển 2 thẻ trên -->
+  <script>
+    function chaoHoi() {
+      // Lấy chữ cậu gõ ở ô <input id="hoTen"> cất vào hộp ten
+      let ten = document.getElementById("hoTen").value;
+
+      // Tìm thẻ <p id="loiChao"> ở trên và nhét chữ vào giữa cặp <p>...</p>
+      document.getElementById("loiChao").innerHTML = "Xin chào " + ten + "!";
+    }
+  </script>
+</body>
+</html>
