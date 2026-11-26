@@ -7,6 +7,25 @@
 </head>
 <body>
     <h3> chương trình tính lãi suất ngân hàng</h3>
-    <p> Số tiền vay <input type="number" id="number" value="50"></p>
-    <p></p>
+    <p> Số tiền vay <input type="number" id="tienvay" value="50"></p>
+    <p>Lãi suất (%) <input type="number" id="laisuat" value="6.9" /></p>
+    <p>Số năm <input type="number" id="sonam" value="2" /></p>
+    <button onclick="tinhlaidon()"> Tính tổng tiền </button>
+    <p id="ketqua"></p>
+
+    <script>
+function tinhlaidon() { 
+    let goc = parseFloat(document.getElementById("tienvay").value);
+    let lai = parseFloat(document.getElementById("laisuat").value);
+    let n = parseFloat(document.getElementById("sonam").value);
+
+    let lai1nam = goc * (lai / 100);
+    let tongtien = goc + n * lai1nam;
+
+    document.getElementById("ketqua").innerHTML =
+        `Tiền lãi mỗi năm: <b>${lai1nam.toFixed(2)}</b> triệu đồng<br>` +
+        `Tổng tiền phải trả sau ${n} năm: <b>${tongtien.toFixed(2)}</b> triệu đồng`;
+}
+    </script>
+    </body>
 </html>
